@@ -1,5 +1,11 @@
 hs.window.animationDuration = 0
 
+function hs.window.fullFrame(win)
+  if win ~= nil then
+    win:setFullScreen(not win:isFullScreen())
+  end
+end
+
 -- +-----------------+
 -- |        |        |
 -- |  HERE  |        |
@@ -159,31 +165,56 @@ end
 -- | HERE |          |
 -- |      |          |
 -- +-----------------+
-function hs.window.left40(win)
+-- +-----------------+
+-- |         |       |
+-- | HERE    |       |
+-- |         |       |
+-- +-----------------+
+function hs.window.left4060(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
 
   f.x = max.x
   f.y = max.y
-  f.w = max.w * 0.4
+  if f.w == max.w * 0.6 then
+    f.w = max.w * 0.4
+  else
+    f.w = max.w * 0.6
+  end
   f.h = max.h
   win:setFrame(f)
 end
 
 -- +-----------------+
+-- |         |       |
+-- |         | HERE  |
+-- |         |       |
+-- +-----------------+
+-- +-----------------+
 -- |      |          |
 -- |      |   HERE   |
 -- |      |          |
 -- +-----------------+
-function hs.window.right60(win)
+function hs.window.right4060(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
 
-  f.x = max.w * 0.4
+  if f.x == max.w * 0.6 then
+    f.x = max.w * 0.4
+  else
+    f.x = max.w * 0.6
+  end
+
   f.y = max.y
-  f.w = max.w * 0.6
+
+  if f.w == 0.6 then
+    f.w = max.w * 0.4
+  else
+    f.w = max.w * 0.6
+  end
+
   f.h = max.h
   win:setFrame(f)
 end
@@ -199,6 +230,7 @@ function hs.window.nextScreen(win)
   else
     win:moveToScreen(allScreens[1])
   end
+  win:focus()
 end
 
 windowLayoutMode = hs.hotkey.modal.new({}, 'F16')
