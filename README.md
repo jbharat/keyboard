@@ -1,36 +1,16 @@
 ## Toward a more useful keyboard
 
-Steve Losh's [Modern Space Cadet][modern-space-cadet] is an inspiration.
-It opened my eyes to the fact that there's a more useful keyboard hidden inside the vanilla QWERTY package that most of us have tolerated for all these years.
-This repo represents my nascent quest to unleash that more useful keyboard.
+Custom configuration of [Keyboard
+Repo](https://github.com/jasonrudolph/keyboard) with few additional window
+management keybindings and few karabiner keybindings.
 
-At first, this might sound no different than the typical Emacs/Vim/\<Every-Other-Editor> tweakfest.
-But it is.
-I'm not talking about honing my editor-of-choice.
-I'm not talking about pimping out my shell.
-I want a more useful keyboard _everywhere_.
-Whether I'm in my editor, in the terminal, in the browser, or in Keynote,
-I want a more useful keyboard.
+📣 Shout-out to [@jasonrudolph](https://github.com/jasonrudolph)
 
-And ideally, I want the _same_ (more useful) keyboard in every app.
-Ubiquitous keyboarding.
-Muscle memory.
-[Don't make me think][don't-make-me-think].
-
-How do I go to the beginning of the line in this app?
-The same way I go to the beginning of the line in _every_ app!
-Don't make me think.
-
-How do I go to the top of the file/screen/page in this app?
-The same way I...
-Well, you get the point.
-
-## More useful (for me)
-
-> **cus·tom·ize** (_verb_): to modify or build according to individual or personal specifications or preference [[dictionary.com][customize]]
-
-Any customization is, by definition, personal.
-While I find that these customizations yield a more-useful keyboard for me, they might not feel like a win for you.
+## Karabiner Keybindings
+* Change right option to Hyper (i.e., command+control+option+shift)
+* Map fn + number keys to their corresponding function keys (rev 1)
+* Change caps_lock to control if pressed with other keys, to escape if pressed alone.
+* Toggle caps_lock by pressing left_shift + right_shift at the same time 
 
 ## Features
 
@@ -81,8 +61,9 @@ Use <kbd>control</kbd> + <kbd>s</kbd> to turn on Window Layout Mode. Then, use a
 - Use <kbd>j</kbd> to send window down (bottom half of screen)
 - Use <kbd>k</kbd> to send window up (top half of screen)
 - Use <kbd>l</kbd> to send window right (right half of screen)
-- Use <kbd>ctrl</kbd> + <kbd>h</kbd> to send window to left 40% / 60% of screen
-- Use <kbd>ctrl</kbd> + <kbd>l</kbd> to send window to right 40% / 60% of screen
+- Use <kbd>ctrl</kbd> + <kbd>h</kbd> toggle window to the left with width 40% or 60%
+- Use <kbd>ctrl</kbd> + <kbd>l</kbd> toggle window to the right with width 40%
+  or 60%
 - Use <kbd>i</kbd> to send window to upper left quarter of screen
 - Use <kbd>o</kbd> to send window to upper right quarter of screen
 - Use <kbd>,</kbd> to send window to lower left quarter of screen
@@ -184,7 +165,7 @@ This setup is honed and tested with the following dependencies.
 
 ## TODO
 
-- Add [#13](https://github.com/jasonrudolph/keyboard/pull/13) to [features](#features):
+- Add [#13](https://github.com/jbharat/keyboard/pull/13) to [features](#features):
     - Hold option for push-to-talk/push-to-mute
     - Double-tap option to mute/unmute microphone
 
