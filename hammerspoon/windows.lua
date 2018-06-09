@@ -177,7 +177,7 @@ function hs.window.left4060(win)
 
   f.x = max.x
   f.y = max.y
-  if f.w == max.w * 0.6 then
+  if f.w >= max.w * 0.5 then
     f.w = max.w * 0.4
   else
     f.w = max.w * 0.6
@@ -201,7 +201,7 @@ function hs.window.right4060(win)
   local screen = win:screen()
   local max = screen:frame()
 
-  if f.x == max.w * 0.6 then
+  if f.x >= max.w * 0.5 then
     f.x = max.w * 0.4
   else
     f.x = max.w * 0.6
@@ -209,7 +209,7 @@ function hs.window.right4060(win)
 
   f.y = max.y
 
-  if f.w == 0.6 then
+  if f.x >= max.w * 0.5 then
     f.w = max.w * 0.4
   else
     f.w = max.w * 0.6
