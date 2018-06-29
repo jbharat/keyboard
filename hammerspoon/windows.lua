@@ -170,7 +170,7 @@ end
 -- | HERE    |       |
 -- |         |       |
 -- +-----------------+
-function hs.window.left4060(win)
+function hs.window.left3070(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
@@ -178,9 +178,9 @@ function hs.window.left4060(win)
   f.x = max.x
   f.y = max.y
   if f.w >= max.w * 0.5 then
-    f.w = max.w * 0.4
+    f.w = max.w * 0.3
   else
-    f.w = max.w * 0.6
+    f.w = max.w * 0.7
   end
   f.h = max.h
   win:setFrame(f)
@@ -196,23 +196,23 @@ end
 -- |      |   HERE   |
 -- |      |          |
 -- +-----------------+
-function hs.window.right4060(win)
+function hs.window.right3070(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
 
   if f.x >= max.w * 0.5 then
-    f.x = max.w * 0.4
+    f.x = max.w * 0.3
   else
-    f.x = max.w * 0.6
+    f.x = max.w * 0.7
   end
 
   f.y = max.y
 
   if f.x >= max.w * 0.5 then
-    f.w = max.w * 0.4
+    f.w = max.w * 0.3
   else
-    f.w = max.w * 0.6
+    f.w = max.w * 0.7
   end
 
   f.h = max.h

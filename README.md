@@ -61,9 +61,8 @@ Use <kbd>control</kbd> + <kbd>s</kbd> to turn on Window Layout Mode. Then, use a
 - Use <kbd>j</kbd> to send window down (bottom half of screen)
 - Use <kbd>k</kbd> to send window up (top half of screen)
 - Use <kbd>l</kbd> to send window right (right half of screen)
-- Use <kbd>ctrl</kbd> + <kbd>h</kbd> toggle window to the left with width 40% or 60%
-- Use <kbd>ctrl</kbd> + <kbd>l</kbd> toggle window to the right with width 40%
-  or 60%
+- Use <kbd>shift</kbd> + <kbd>h</kbd> toggle window to the left with width 30%/70%
+- Use <kbd>shift</kbd> + <kbd>l</kbd> toggle window to the right with width 30%/70%
 - Use <kbd>i</kbd> to send window to upper left quarter of screen
 - Use <kbd>o</kbd> to send window to upper right quarter of screen
 - Use <kbd>,</kbd> to send window to lower left quarter of screen

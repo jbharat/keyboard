@@ -10,7 +10,7 @@ return {
   { 'd', 'Remember The Milk' }, -- "D" for "Do!" ... or "Done!"
   { 'e', 'Emacs' },             -- "E" for "Editor"
   { 'f', 'Finder' },            -- "F" for "Finder"
-  { 'g', 'Spark' },             -- "G" for "Gmail"
+  { 'g', 'Microsoft Outlook' }, -- "G" for "Gmail"
   { 's', 'Slack' },             -- "S" for "Slack"
   { 't', 'iTerm' },             -- "T" for "Terminal"
 }
