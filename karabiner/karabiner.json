@@ -334,59 +334,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Toggle caps_lock by pressing left_shift + right_shift at the same time",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_shift",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "right_shift",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -463,7 +410,7 @@
                         "key_code": "f1"
                     },
                     "to": {
-                        "key_code": "vk_consumer_brightness_down"
+                        "key_code": "volume_down"
                     }
                 },
                 {
@@ -471,7 +418,7 @@
                         "key_code": "f2"
                     },
                     "to": {
-                        "key_code": "vk_consumer_brightness_up"
+                        "key_code": "volume_up"
                     }
                 },
                 {
@@ -479,7 +426,7 @@
                         "key_code": "f3"
                     },
                     "to": {
-                        "key_code": "vk_mission_control"
+                        "key_code": "caps_lock"
                     }
                 },
                 {
@@ -487,7 +434,7 @@
                         "key_code": "f4"
                     },
                     "to": {
-                        "key_code": "vk_launchpad"
+                        "key_code": "f4"
                     }
                 },
                 {
@@ -495,7 +442,7 @@
                         "key_code": "f5"
                     },
                     "to": {
-                        "key_code": "vk_consumer_illumination_down"
+                        "key_code": "f5"
                     }
                 },
                 {
@@ -503,7 +450,7 @@
                         "key_code": "f6"
                     },
                     "to": {
-                        "key_code": "vk_consumer_illumination_up"
+                        "key_code": "f6"
                     }
                 },
                 {
@@ -511,7 +458,7 @@
                         "key_code": "f7"
                     },
                     "to": {
-                        "key_code": "vk_consumer_previous"
+                        "key_code": "f7"
                     }
                 },
                 {
@@ -519,7 +466,7 @@
                         "key_code": "f8"
                     },
                     "to": {
-                        "key_code": "vk_consumer_play"
+                        "key_code": "f8"
                     }
                 },
                 {
@@ -527,7 +474,7 @@
                         "key_code": "f9"
                     },
                     "to": {
-                        "key_code": "vk_consumer_next"
+                        "key_code": "f9"
                     }
                 },
                 {
@@ -535,7 +482,7 @@
                         "key_code": "f10"
                     },
                     "to": {
-                        "key_code": "mute"
+                        "key_code": "f10"
                     }
                 },
                 {
@@ -543,7 +490,7 @@
                         "key_code": "f11"
                     },
                     "to": {
-                        "key_code": "volume_down"
+                        "key_code": "f11"
                     }
                 },
                 {
@@ -551,7 +498,7 @@
                         "key_code": "f12"
                     },
                     "to": {
-                        "key_code": "volume_up"
+                        "key_code": "f12"
                     }
                 }
             ],
@@ -560,7 +507,7 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "country_code": 0,
+                "country_code": 61,
                 "keyboard_type": "ansi"
             }
         }
