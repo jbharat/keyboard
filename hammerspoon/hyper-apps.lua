@@ -11,6 +11,7 @@ return {
   { 'f', 'Finder' },            -- "f" for "Finder"
   { 'g', 'Microsoft Outlook' }, -- "g" for "Gmail"
   { 'n', 'Microsoft OneNote' }, -- "n" for "OneNote"
+  { 'p', 'Pocket' },            -- "p" for "Pocket"
   { 's', 'Safari' },            -- "S" for "Safari"
   { 't', 'iTerm' },             -- "t" for "Terminal"
   { 'v', 'Visual Studio Code' },-- "v" for "code"
