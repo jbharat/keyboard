@@ -287,7 +287,7 @@ for i, mapping in ipairs(mappings) do
     end
   end
 
-  windowLayoutMode:bind(modifiers, trigger, function()
+  windowLayoutMode:bindWithAutomaticExit(modifiers, trigger, function()
     --example: hs.window.focusedWindow():upRight()
     local fw = hs.window.focusedWindow()
     fw[winFunction](fw)
@@ -304,6 +304,6 @@ end)
 windowLayoutMode:bind(modifiers, trigger, function()
   windowLayoutMode:exit()
 end)
-windowLayoutMode:bind({}, 'escape', function()
-  windowLayoutMode:exit()
-end)
+-- windowLayoutMode:bind({}, 'escape', function()
+--   windowLayoutMode:exit()
+-- end)
