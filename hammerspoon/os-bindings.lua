@@ -67,7 +67,7 @@ selectWordStart = function() fastKeyStroke({'alt', 'shift'}, 'left') end
 selectWordEnd = function() fastKeyStroke({'alt', 'shift'}, 'right') end
 
 selectTextStart = function() keyUpDown({'cmd', 'shift'}, 'up') end
-selectTextStart = function() keyUpDown({'cmd', 'shift'}, 'down') end
+selectTextEnd = function() keyUpDown({'cmd', 'shift'}, 'down') end
 
 -- bind ctrl-j/k/h/l as down/up/left/right
 hs.hotkey.bind({'ctrl'}, 'j', down, nil, down)
@@ -96,8 +96,8 @@ hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'h', selectWordStart, nil, selectWordSt
 hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'l', selectWordEnd, nil, selectWordEnd)
 
 -- bind ctrl+option+shift+j/k as select till text start/end
-hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'j', textEnd)
-hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'k', textStart)
+hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'j', selectTextEnd)
+hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'k', selectTextStart)
 
 -- bind ctrl+option+j/k as pagedown/pageup
 hs.hotkey.bind({'ctrl', 'alt'}, 'f', pagedown, nil, pagedown)
