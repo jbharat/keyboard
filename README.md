@@ -59,8 +59,6 @@ window left, hit <kbd>control</kbd> + <kbd>s</kbd>, and then hit <kbd>h</kbd>
 - Use <kbd>→</kbd> to send window to the monitor on the right (if there is one)
 - Use <kbd>control</kbd> + <kbd>s</kbd> to exit Window Layout Mode
 
-[<img src="https://cloud.githubusercontent.com/assets/2988/22397114/715cc12e-e538-11e6-9dcd-b3447af0d9dd.png" alt="Window Layout Mode Keybindings (1)" width="400"/>](https://cloud.githubusercontent.com/assets/2988/22397114/715cc12e-e538-11e6-9dcd-b3447af0d9dd.png) [<img src="https://cloud.githubusercontent.com/assets/2988/22397111/45672fe6-e538-11e6-905d-5b0234e290bb.png" alt="Window Layout Mode Keybindings (2)" width="400"/>](https://cloud.githubusercontent.com/assets/2988/22397111/45672fe6-e538-11e6-905d-5b0234e290bb.png)
-
 #### Choose your own keybindings
 
 Window Layout Mode ships with the default keybindings above, but you're welcome to personalize this setup. See [`hammerspoon/windows-bindings-defaults.lua`](hammerspoon/windows-bindings-defaults.lua) for instructions on configuring shortcuts to your personal taste.
@@ -115,14 +113,20 @@ Hyper Mode ships with the default keybindings below, but you'll likely want to p
 - <kbd>hyper</kbd> + <kbd>s</kbd> to open [Slack](https://slack.com/downloads/osx) ("S" for "Slack")
 - <kbd>hyper</kbd> + <kbd>t</kbd> to open [iTerm2](https://www.iterm2.com/) ("T" for "Terminal")
 
-### Miscellaneous goodness
 
-- Use <kbd>control</kbd> + <kbd>h</kbd> / <kbd>j</kbd> / <kbd>k</kbd> /
-  <kbd>l</kbd> to move cursor left/down/up/right 
-- Use <kbd>control</kbd> + <kbd>u</kbd> to delete to the start of the line
-- Use <kbd>control</kbd> + <kbd>;</kbd> to delete to the end of the line
+### OS key bindings
+
+- Use <kbd>control</kbd> + <kbd>h</kbd> / <kbd>j</kbd> / <kbd>k</kbd> / <kbd>l</kbd> to move cursor left/down/up/right (Repeatable)
+- Use <kbd>control</kbd> + <kbd>u</kbd> / <kbd>;</kbd> to delete till start/end of the line
 - Use <kbd>option</kbd> + <kbd>h</kbd> / <kbd>l</kbd> to delete the previous/next word
-- Use <kbd>control</kbd> + <kbd>option</kbd> + <kbd>j</kbd> / <kbd>k</kbd> for pagedown/pageup
+- Use <kbd>control</kbd> + <kbd>option</kbd> + <kbd>j</kbd> / <kbd>k</kbd> for pagedown/pageup (Repeatable)
+- Use <kbd>control</kbd> + <kbd>a</kbd> / <kbd>e</kbd> to move to start/end of line
+- Use <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>a</kbd> / <kbd>e</kbd> to select till start/end of line
+- Use <kbd>control</kbd> + <kbd>option</kbd> + <kbd>h</kbd> / <kbd>l</kbd> to move to word start/end (Repeatable)
+- Use <kbd>control</kbd> + <kbd>option</kbd> + <kbd>shift</kbd> + <kbd>h</kbd> / <kbd>l</kbd> to select till word start/end (Repeatable)
+- Use <kbd>control</kbd> + <kbd>option</kbd> + <kbd>j</kbd> / <kbd>k</kbd> to move to text start/end
+- Use <kbd>control</kbd> + <kbd>option</kbd>  + <kbd>shift</kbd> + <kbd>j</kbd> / <kbd>k</kbd> to select till text start/end
+  
 
 ## Dependencies
 
