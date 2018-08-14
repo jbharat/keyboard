@@ -76,12 +76,12 @@ hs.hotkey.bind({'ctrl'}, 'h', left, nil, left)
 hs.hotkey.bind({'ctrl'}, 'l', right, nil, right)
 
 -- bind ctrl-a/e as move to line start/end
--- hs.hotkey.bind({'ctrl'}, 'a', lineStart)
+hs.hotkey.bind({'ctrl'}, 'a', lineStart)
 hs.hotkey.bind({'ctrl'}, 'e', lineEnd)
 
 -- bind ctrl+option+h/l as move to word start/end
 hs.hotkey.bind({'ctrl', 'alt'}, 'h', wordStart, nil, wordStart)
-hs.hotkey.bind({'ctrl', 'alt'}, 'l', workEnd, nil, wordEnd)
+hs.hotkey.bind({'ctrl', 'alt'}, 'l', wordEnd, nil, wordEnd)
 
 -- bind ctrl+option+j/k as move to text end/start
 hs.hotkey.bind({'ctrl', 'alt'}, 'j', textEnd)
@@ -93,7 +93,7 @@ hs.hotkey.bind({'ctrl', 'shift'}, 'e', selectLineEnd)
 
 -- bind ctrl+option+shift+h/l as select till word start/end
 hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'h', selectWordStart, nil, selectWordStart)
-hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'l', selectWorkEnd, nil, selectWordEnd)
+hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'l', selectWordEnd, nil, selectWordEnd)
 
 -- bind ctrl+option+shift+j/k as select till text start/end
 hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'j', textEnd)
