@@ -410,7 +410,7 @@
                         "key_code": "f1"
                     },
                     "to": {
-                        "key_code": "volume_down"
+                        "key_code": "caps_lock"
                     }
                 },
                 {
@@ -418,7 +418,7 @@
                         "key_code": "f2"
                     },
                     "to": {
-                        "key_code": "volume_up"
+                        "key_code": "2"
                     }
                 },
                 {
@@ -426,7 +426,7 @@
                         "key_code": "f3"
                     },
                     "to": {
-                        "key_code": "caps_lock"
+                        "key_code": "f3"
                     }
                 },
                 {
