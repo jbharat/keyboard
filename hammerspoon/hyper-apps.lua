@@ -7,6 +7,7 @@ return {
   { 'a', 'Spotify' },           -- "a" for "Apple Music"
   { 'b', 'Google Chrome' },     -- "b" for "Browser"
   { 'c', 'Slack' },             -- "c" for "Chat(slack)"
+  { 'd', 'Todoist' },
   { 'e', 'Emacs' },             -- "e" for "Editor"
   { 'f', 'Finder' },            -- "f" for "Finder"
   { 'g', 'Mail' },             -- "g" for "Gmail"
