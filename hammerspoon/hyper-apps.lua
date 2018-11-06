@@ -7,10 +7,10 @@ return {
   { 'a', 'Spotify' },           -- "a" for "Apple Music"
   { 'b', 'Google Chrome' },     -- "b" for "Browser"
   { 'c', 'Slack' },             -- "c" for "Chat(slack)"
-  { 'd', 'Todoist' },
+  { 'd', 'Todoist' },           -- 'd' for 'Do(todoist)'
   { 'e', 'Emacs' },             -- "e" for "Editor"
   { 'f', 'Finder' },            -- "f" for "Finder"
-  { 'g', 'Mail' },             -- "g" for "Gmail"
+  { 'g', 'Mail' },              -- "g" for "Gmail"
   { 'i', 'IntelliJ IDEA CE' },  -- "i" for "IntelliJ ide"
   { 'n', 'Notion' },            -- "n" for "Notes (Notion)"
   { 'p', 'Gcal' },              -- "p" for "plan"
@@ -18,4 +18,5 @@ return {
   { 't', 'iTerm' },             -- "t" for "Terminal"
   { 'v', 'Visual Studio Code' },-- "v" for "code"
   { 'w', 'Twitterrific' },      -- "w" for "Twitterrific"
+  { 'x', 'Trello' },            -- "x" for "Trello"
 }
