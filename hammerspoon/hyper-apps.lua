@@ -10,7 +10,7 @@ return {
   { 'd', 'Todoist' },           -- 'd' for 'Do(todoist)'
   { 'e', 'Emacs' },             -- "e" for "Editor"
   { 'f', 'Finder' },            -- "f" for "Finder"
-  { 'g', 'Mail' },              -- "g" for "Gmail"
+  { 'g', 'Canary Mail' },       -- "g" for "Gmail"
   { 'i', 'IntelliJ IDEA CE' },  -- "i" for "IntelliJ ide"
   { 'n', 'Notion' },            -- "n" for "Notes (Notion)"
   { 'p', 'Gcal' },              -- "p" for "plan"
