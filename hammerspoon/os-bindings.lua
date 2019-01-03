@@ -69,11 +69,11 @@ selectWordEnd = function() fastKeyStroke({'alt', 'shift'}, 'right') end
 selectTextStart = function() keyUpDown({'cmd', 'shift'}, 'up') end
 selectTextEnd = function() keyUpDown({'cmd', 'shift'}, 'down') end
 
--- bind ctrl-j/k/h/l as down/up/left/right
-hs.hotkey.bind({'ctrl'}, 'j', down, nil, down)
-hs.hotkey.bind({'ctrl'}, 'k', up, nil, up)
-hs.hotkey.bind({'ctrl'}, 'h', left, nil, left)
-hs.hotkey.bind({'ctrl'}, 'l', right, nil, right)
+-- bind options-j/k/h/l as down/up/left/right
+hs.hotkey.bind({'alt'}, 'j', down, nil, down)
+hs.hotkey.bind({'alt'}, 'k', up, nil, up)
+hs.hotkey.bind({'alt'}, 'h', left, nil, left)
+hs.hotkey.bind({'alt'}, 'l', right, nil, right)
 --
 -- -- bind ctrl-a/e as move to line start/end
 hs.hotkey.bind({'ctrl'}, 'a', lineStart)
