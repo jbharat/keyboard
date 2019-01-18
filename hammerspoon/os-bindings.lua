@@ -7,6 +7,11 @@ local isInTerminal = function()
   return app == 'iTerm2' or app == 'Terminal'
 end
 
+local isBrowser = function()
+  app = hs.application.frontmostApplication():name()
+  return app == 'Google Chrome' or app == 'Firefox' or app == 'Brave Browser'
+end
+
 fastKeyStroke = function(modifiers, character)
   event.newKeyEvent(modifiers, string.lower(character), true):post()
   event.newKeyEvent(modifiers, string.lower(character), false):post()
@@ -54,20 +59,17 @@ lineEnd = function()
   end
 end
 
-wordStart = function() fastKeyStroke({'alt'}, 'left') end
-wordEnd = function() fastKeyStroke({'alt'}, 'right') end
+browserBack = function()
+  if isBrowser() then
+    keyUpDown({'cmd'}, 'left')
+  end
+end
 
-textStart = function() keyUpDown({'cmd'}, 'up') end
-textEnd = function() keyUpDown({'cmd'}, 'down') end
-
-selectLineStart = function() keyUpDown({'cmd', 'shift'}, 'left') end
-selectLineEnd = function() keyUpDown({'cmd', 'shift'}, 'right') end
-
-selectWordStart = function() fastKeyStroke({'alt', 'shift'}, 'left') end
-selectWordEnd = function() fastKeyStroke({'alt', 'shift'}, 'right') end
-
-selectTextStart = function() keyUpDown({'cmd', 'shift'}, 'up') end
-selectTextEnd = function() keyUpDown({'cmd', 'shift'}, 'down') end
+browserNext = function()
+  if isBrowser() then
+    keyUpDown({'cmd'}, 'right')
+  end
+end
 
 -- bind options-j/k/h/l as down/up/left/right
 hs.hotkey.bind({'alt'}, 'j', down, nil, down)
@@ -78,27 +80,11 @@ hs.hotkey.bind({'alt'}, 'l', right, nil, right)
 -- -- bind ctrl-a/e as move to line start/end
 hs.hotkey.bind({'ctrl'}, 'a', lineStart)
 hs.hotkey.bind({'ctrl'}, 'e', lineEnd)
---
--- -- bind ctrl+option+h/l as move to word start/end
--- hs.hotkey.bind({'ctrl', 'alt'}, 'h', wordStart, nil, wordStart)
--- hs.hotkey.bind({'ctrl', 'alt'}, 'l', wordEnd, nil, wordEnd)
---
--- -- bind ctrl+option+j/k as move to text end/start
--- hs.hotkey.bind({'ctrl', 'alt'}, 'j', textEnd)
--- hs.hotkey.bind({'ctrl', 'alt'}, 'k', textStart)
---
--- -- bind ctrl+shift+a/e as select till line start/end
--- hs.hotkey.bind({'ctrl', 'shift'}, 'a', selectLineStart)
--- hs.hotkey.bind({'ctrl', 'shift'}, 'e', selectLineEnd)
---
--- -- bind ctrl+option+shift+h/l as select till word start/end
--- hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'h', selectWordStart, nil, selectWordStart)
--- hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'l', selectWordEnd, nil, selectWordEnd)
---
--- -- bind ctrl+option+shift+j/k as select till text start/end
--- hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'j', selectTextEnd)
--- hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'k', selectTextStart)
---
+
+-- -- bing alt h/l to cmd-left/right in browsers
+hs.hotkey.bind({'alt'}, 'h', browserBack)
+hs.hotkey.bind({'alt'}, 'l', browserNext)
+
 -- -- bind ctrl+option+j/k as pagedown/pageup
-hs.hotkey.bind({'ctrl', 'alt'}, 'f', pagedown, nil, pagedown)
-hs.hotkey.bind({'ctrl', 'alt'}, 'b', pageup, nil, pageup)
+hs.hotkey.bind({'alt'}, 'd', pagedown, nil, pagedown)
+hs.hotkey.bind({'alt'}, 'u', pageup, nil, pageup)
