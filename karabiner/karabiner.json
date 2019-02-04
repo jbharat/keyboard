@@ -67,6 +67,27 @@
                         ]
                     },
                     {
+                        "description": "Change left control to options.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_option"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map fn + number keys to their corresponding function keys (rev 1)",
                         "manipulators": [
                             {
@@ -440,7 +461,7 @@
                         "key_code": "f1"
                     },
                     "to": {
-                        "consumer_key_code": "display_brightness_decrement"
+                        "key_code": "f1"
                     }
                 },
                 {
@@ -448,7 +469,7 @@
                         "key_code": "f2"
                     },
                     "to": {
-                        "consumer_key_code": "display_brightness_increment"
+                        "key_code": "f2"
                     }
                 },
                 {
@@ -456,7 +477,7 @@
                         "key_code": "f3"
                     },
                     "to": {
-                        "key_code": "print_screen"
+                        "key_code": "f3"
                     }
                 },
                 {
@@ -464,7 +485,7 @@
                         "key_code": "f4"
                     },
                     "to": {
-                        "key_code": "mission_control"
+                        "key_code": "f4"
                     }
                 },
                 {
@@ -472,7 +493,7 @@
                         "key_code": "f5"
                     },
                     "to": {
-                        "key_code": "dashboard"
+                        "key_code": "f5"
                     }
                 },
                 {
@@ -480,7 +501,7 @@
                         "key_code": "f6"
                     },
                     "to": {
-                        "key_code": "illumination_decrement"
+                        "key_code": "f6"
                     }
                 },
                 {
@@ -488,7 +509,7 @@
                         "key_code": "f7"
                     },
                     "to": {
-                        "key_code": "illumination_increment"
+                        "key_code": "f7"
                     }
                 },
                 {
@@ -520,7 +541,7 @@
                         "key_code": "f11"
                     },
                     "to": {
-                        "consumer_key_code": "volume_decrement"
+                        "key_code": "f11"
                     }
                 },
                 {
@@ -528,7 +549,7 @@
                         "key_code": "f12"
                     },
                     "to": {
-                        "consumer_key_code": "volume_increment"
+                        "key_code": "f12"
                     }
                 }
             ],

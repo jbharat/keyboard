@@ -86,5 +86,5 @@ hs.hotkey.bind({'alt'}, 'h', browserBack)
 hs.hotkey.bind({'alt'}, 'l', browserNext)
 
 -- -- bind ctrl+option+j/k as pagedown/pageup
-hs.hotkey.bind({'alt'}, 'd', pagedown, nil, pagedown)
-hs.hotkey.bind({'alt'}, 'u', pageup, nil, pageup)
+hs.hotkey.bind({'alt'}, 'f', pagedown, nil, pagedown)
+hs.hotkey.bind({'alt'}, 'b', pageup, nil, pageup)
