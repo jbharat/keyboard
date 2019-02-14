@@ -36,6 +36,5 @@ require('keyboard.hyper')
 require('keyboard.markdown')
 require('keyboard.microphone')
 require('keyboard.windows')
-require('keyboard.os-bindings')
 
 hs.notify.new({title='Hammerspoon', informativeText='Ready to rock 🤘'}):send()
