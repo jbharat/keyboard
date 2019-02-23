@@ -15,31 +15,6 @@
         },
         "rules": [
           {
-            "rules": [
-              {
-                "description": "Disable Cmd+H Hide",
-                "manipulators": [
-                  {
-                    "description": "",
-                    "from": {
-                      "key_code": "h",
-                      "modifiers": {
-                        "mandatory": ["command"]
-                      }
-                    },
-                    "to": [
-                      {
-                        "key_code": "VK_NONE"
-                      }
-                    ],
-                    "type": "basic"
-                  }
-                ]
-              }
-            ],
-            "title": "Prevent unintended command-h hide window"
-          },
-          {
             "manipulators": [
               {
                 "description": "Change right option to Hyper (i.e., command+control+option+shift)",
