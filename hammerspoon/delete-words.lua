@@ -20,7 +20,7 @@ hs.hotkey.bind({'alt'}, 'l', function()
     keyUpDown({}, 'escape')
     keyUpDown({}, 'd')
   else
-    keyUpDown({'alt'}, 'forwarddelete')
+    -- keyUpDown({'alt'}, 'forwarddelete')
   end
 end)
 
