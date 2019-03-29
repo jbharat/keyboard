@@ -148,6 +148,8 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
+cmd + ctrl - return : emacsclient -c -n -a ""
+
 :: passthrough
 cmd + ctrl - t ; passthrough
 passthrough < cmd + ctrl - t; default
