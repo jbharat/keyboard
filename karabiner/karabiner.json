@@ -67,7 +67,7 @@
                         ]
                     },
                     {
-                        "description": "Map left_command+left_control+h as left_arrow.",
+                        "description": "Map left_command+left_control+h/i/j/k as arrows.",
                         "manipulators": [
                             {
                                 "from": {
@@ -85,12 +85,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_command+left_control+l as right_arrow.",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "l",
@@ -107,12 +102,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_command+left_control+j as down_arrow.",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "j",
@@ -129,12 +119,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_command+left_control+k as up_arrow.",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "k",
@@ -155,7 +140,7 @@
                         ]
                     },
                     {
-                        "description": "Map left_command+left_control+u as page_up.",
+                        "description": "Map left_command+left_control+u/d as page-up/down.",
                         "manipulators": [
                             {
                                 "from": {
@@ -173,12 +158,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_command+left_contorl+d as page_down.",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "d",
@@ -199,7 +179,7 @@
                         ]
                     },
                     {
-                        "description": "Map left_command+left_contorl+s as home.",
+                        "description": "Map left_command+left_contorl+s/e as home/end.",
                         "manipulators": [
                             {
                                 "from": {
@@ -217,12 +197,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_command+left_contorl+e as end.",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "e",
@@ -258,6 +233,28 @@
                                 "to": [
                                     {
                                         "key_code": "delete_forward"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Map left_command+left_contorl+` as mission control.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "mission_control"
                                     }
                                 ],
                                 "type": "basic"
@@ -701,42 +698,42 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
-                        },
-                        {
-                            "from": {
                                 "key_code": "escape"
                             },
                             "to": {
                                 "key_code": "grave_accent_and_tilde"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "left_option"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": {
+                                "key_code": "left_command"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_command"
+                            },
+                            "to": {
+                                "key_code": "right_option"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_option"
+                            },
+                            "to": {
+                                "key_code": "right_command"
                             }
                         }
                     ]
