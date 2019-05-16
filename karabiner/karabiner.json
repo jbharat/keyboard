@@ -338,7 +338,7 @@
             ]
           },
           {
-            "description": "Map fn+ t/T as brightness down/up.",
+            "description": "Map fn+ t/y as brightness down/up.",
             "manipulators": [
               {
                 "from": {
@@ -356,9 +356,9 @@
               },
               {
                 "from": {
-                  "key_code": "t",
+                  "key_code": "y",
                   "modifiers": {
-                    "mandatory": ["fn", "shift"]
+                    "mandatory": ["fn"]
                   }
                 },
                 "to": [
@@ -755,6 +755,22 @@
               },
               "to": {
                 "key_code": "left_command"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_option"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_option"
+              },
+              "to": {
+                "key_code": "right_command"
               }
             }
           ]
