@@ -16,26 +16,6 @@
         },
         "rules": [
           {
-            "manipulators": [
-              {
-                "description": "Change right option to Hyper (i.e., command+control+option+shift)",
-                "from": {
-                  "key_code": "right_option",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": ["left_control", "left_option", "left_command"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Change caps_lock to control if pressed with other keys, to escape if pressed alone.",
             "manipulators": [
               {
@@ -67,7 +47,8 @@
                 "from": {
                   "key_code": "h",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -81,7 +62,8 @@
                 "from": {
                   "key_code": "l",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -95,7 +77,8 @@
                 "from": {
                   "key_code": "j",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -109,77 +92,13 @@
                 "from": {
                   "key_code": "k",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "up_arrow"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Map fn+h/j/k/l  with shift as arrows with shift.",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": ["fn", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_arrow",
-                    "modifiers": ["shift"]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "mandatory": ["fn", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "right_arrow",
-                    "modifiers": ["shift"]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "mandatory": ["fn", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "down_arrow",
-                    "modifiers": ["shift"]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "k",
-                  "modifiers": {
-                    "mandatory": ["fn", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "up_arrow",
-                    "modifiers": ["shift"]
                   }
                 ],
                 "type": "basic"
@@ -193,7 +112,8 @@
                 "from": {
                   "key_code": "u",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -207,7 +127,8 @@
                 "from": {
                   "key_code": "d",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -226,7 +147,8 @@
                 "from": {
                   "key_code": "s",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -240,31 +162,13 @@
                 "from": {
                   "key_code": "e",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["fn"],
+                    "optional": ["any"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "end"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Map fn+delete as forward_delete.",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "delete_or_backspace",
-                  "modifiers": {
-                    "mandatory": ["fn"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_forward"
                   }
                 ],
                 "type": "basic"
@@ -371,7 +275,7 @@
             ]
           },
           {
-            "description": "Map fn+ i/o/p as previous/play_or_pause/next media keys.",
+            "description": "Map fn+i/o/p as previous/play_or_pause/next media keys.",
             "manipulators": [
               {
                 "from": {
