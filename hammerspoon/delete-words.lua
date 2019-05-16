@@ -6,7 +6,7 @@ local isInTerminal = function()
 end
 
 -- Use option + h to delete previous word
-hs.hotkey.bind({'alt'}, 'h', function()
+hs.hotkey.bind({'alt'}, 'i', function()
   if isInTerminal() then
     keyUpDown({'ctrl'}, 'w')
   else
@@ -15,12 +15,12 @@ hs.hotkey.bind({'alt'}, 'h', function()
 end)
 
 -- Use option + l to delete next word
-hs.hotkey.bind({'alt'}, 'l', function()
+hs.hotkey.bind({'alt'}, 'o', function()
   if isInTerminal() then
     keyUpDown({}, 'escape')
     keyUpDown({}, 'd')
   else
-    -- keyUpDown({'alt'}, 'forwarddelete')
+    keyUpDown({'alt'}, 'forwarddelete')
   end
 end)
 

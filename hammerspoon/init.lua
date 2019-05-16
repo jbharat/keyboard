@@ -32,8 +32,5 @@ enableHotkeyForWindowsMatchingFilter = function(windowFilter, hotkey)
 end
 
 require('keyboard.delete-words')
-require('keyboard.hyper')
-require('keyboard.markdown')
-require('keyboard.microphone')
 
 hs.notify.new({title='Hammerspoon', informativeText='Ready to rock 🤘'}):send()
