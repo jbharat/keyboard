@@ -141,21 +141,21 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 # apps
-fn + shift - a : open -a /Applications/Spotify.app
-fn + shift - b : open -a /Applications/Google\ Chrome.app
-fn + shift - c : open -a /Applications/Slack.app
-fn + shift - d : open -a /Applications/Todoist.app
-fn + shift - e : open -a /Applications/Emacs.app
-fn + shift - f : open -a /System/Library/CoreServices/Finder.app
-fn + shift - g : open -a /Applications/Canary\ Mail.app
-fn + shift - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
-fn + shift - n : open -a /Applications/Notion.app
-fn + shift - p : open -a /Applications/Chrome\ Apps\Gcal.app
-fn + shift - s : open -a /Applications/Safari.app
-fn + shift - t : open -a /Applications/iTerm.app
-fn + shift - v : open -a /Applications/Visual\ Studio\ Code.app
-fn + shift - w : open -a /Applications/Twitterrific.app
-fn + shift - x : open -a /Applications/Trello.app
+fn + cmd - a : open -a /Applications/Spotify.app
+fn + cmd - b : open -a /Applications/Google\ Chrome.app
+fn + cmd - c : open -a /Applications/Slack.app
+fn + cmd - d : open -a /Applications/Todoist.app
+fn + cmd - e : open -a /Applications/Emacs.app
+fn + cmd - f : open -a /System/Library/CoreServices/Finder.app
+fn + cmd - g : open -a /Applications/Canary\ Mail.app
+fn + cmd - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
+fn + cmd - n : open -a /Applications/Notion.app
+fn + cmd - p : open -a ~/Applications/Chrome\ Apps.localized/Default\ ocbmaigbfmphmphfmmhdifoichndhibf.app
+fn + cmd - s : open -a /Applications/Safari.app
+fn + cmd - t : open -a /Applications/iTerm.app
+fn + cmd - v : open -a /Applications/Visual\ Studio\ Code.app
+fn + cmd - w : open -a /Applications/Twitterrific.app
+fn + cmd - x : open -a /Applications/Trello.app
 
 :: passthrough
 cmd + ctrl - t ; passthrough
