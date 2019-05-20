@@ -76,6 +76,17 @@ alt - 7 : chunkc tiling::desktop --focus 7
 alt - 8 : chunkc tiling::desktop --focus 8
 alt - 9 : chunkc tiling::desktop --focus 9
 
+# fast focus desktop with hyper key
+cmd + ctrl + alt + shift - 1 : chunkc tiling::desktop --focus 1
+cmd + ctrl + alt + shift - 2 : chunkc tiling::desktop --focus 2
+cmd + ctrl + alt + shift - 3 : chunkc tiling::desktop --focus 3
+cmd + ctrl + alt + shift - 4 : chunkc tiling::desktop --focus 4
+cmd + ctrl + alt + shift - 5 : chunkc tiling::desktop --focus 5
+cmd + ctrl + alt + shift - 6 : chunkc tiling::desktop --focus 6
+cmd + ctrl + alt + shift - 7 : chunkc tiling::desktop --focus 7
+cmd + ctrl + alt + shift - 8 : chunkc tiling::desktop --focus 8
+cmd + ctrl + alt + shift - 9 : chunkc tiling::desktop --focus 9
+
 # send window to desktop and follow focus
 shift + alt - 1 : chunkc tiling::window --send-to-desktop 1; chunkc tiling::desktop --focus 1
 shift + alt - 2 : chunkc tiling::window --send-to-desktop 2; chunkc tiling::desktop --focus 2
@@ -83,9 +94,9 @@ shift + alt - 3 : chunkc tiling::window --send-to-desktop 3; chunkc tiling::desk
 shift + alt - 4 : chunkc tiling::window --send-to-desktop 4; chunkc tiling::desktop --focus 4
 shift + alt - 5 : chunkc tiling::window --send-to-desktop 5; chunkc tiling::desktop --focus 5
 shift + alt - 6 : chunkc tiling::window --send-to-desktop 6; chunkc tiling::desktop --focus 6
-shift + cmd - 7 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 7
-shift + cmd - 8 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 8
-shift + cmd - 9 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 9
+shift + alt - 7 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 7
+shift + alt - 8 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 8
+shift + alt - 9 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 9
 
 ################## DESKTOP END ###############################################
 
@@ -126,9 +137,9 @@ alt - t : chunkc tiling::window --toggle float;\
 # toggle sticky
 alt - s : chunkc tiling::window --toggle sticky
 
-# toggle sticky, float and resize to picture-in-picture size
-alt - p : chunkc tiling::window --toggle sticky;\
-          chunkc tiling::window --grid-layout 5:5:4:0:1:1
+# # toggle sticky, float and resize to picture-in-picture size
+# alt - p : chunkc tiling::window --toggle sticky;\
+#           chunkc tiling::window --grid-layout 5:5:4:0:1:1
 
 # float next window to be tiled
 shift + alt - t : chunkc set window_float_next 1
@@ -138,7 +149,7 @@ ctrl + alt - a : chunkc tiling::desktop --layout bsp
 ctrl + alt - s : chunkc tiling::desktop --layout monocle
 ctrl + alt - d : chunkc tiling::desktop --layout float
 
-ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
+# ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 # apps
 cmd + ctrl + alt + shift - a : open -a /Applications/Spotify.app
