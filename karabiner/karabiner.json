@@ -162,11 +162,11 @@
             ]
           },
           {
-            "description": "Map fn+s/e as home/end.",
+            "description": "Map fn+a/e as home/end.",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "s",
+                  "key_code": "a",
                   "modifiers": {
                     "mandatory": ["fn"],
                     "optional": ["any"]
