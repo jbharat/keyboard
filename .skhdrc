@@ -155,13 +155,13 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 cmd + ctrl + alt + shift - a : open -a /Applications/Spotify.app
 cmd + ctrl + alt + shift - b : open -a /Applications/Google\ Chrome.app
 cmd + ctrl + alt + shift - c : open -a /Applications/Slack.app
-cmd + ctrl + alt + shift - d : open -a /Applications/Todoist.app
+cmd + ctrl + alt + shift - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.app
 cmd + ctrl + alt + shift - e : open -a /Applications/Emacs.app
 cmd + ctrl + alt + shift - f : open -a /System/Library/CoreServices/Finder.app
 cmd + ctrl + alt + shift - g : open -a /Applications/Canary\ Mail.app
 cmd + ctrl + alt + shift - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
 cmd + ctrl + alt + shift - n : open -a /Applications/Notion.app
-cmd + ctrl + alt + shift - p : open -a ~/Applications/Chrome\ Apps.localized/Default\ ocbmaigbfmphmphfmmhdifoichndhibf.app
+cmd + ctrl + alt + shift - p : open -a ~/Applications/Chrome\ Apps.localized/Google\ Calendar.app
 cmd + ctrl + alt + shift - s : open -a /Applications/Safari.app
 cmd + ctrl + alt + shift - t : open -a /Applications/iTerm.app
 cmd + ctrl + alt + shift - v : open -a /Applications/Visual\ Studio\ Code.app
