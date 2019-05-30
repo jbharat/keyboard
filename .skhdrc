@@ -25,17 +25,17 @@ shift + cmd - k : chunkc tiling::window --warp north
 shift + cmd - l : chunkc tiling::window --warp east
 ################## WINDOW END ###################################################
 
-################## MONITOR START ###################################################
-# focus monitor
-ctrl + alt - 1  : chunkc tiling::monitor -f 1
-ctrl + alt - 2  : chunkc tiling::monitor -f 2
-ctrl + alt - 3  : chunkc tiling::monitor -f 3
-
-# send window to monitor and follow focus
-ctrl + cmd - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
-ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
-ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
-################## MONITOR END ###################################################
+################### MONITOR START ###################################################
+## focus monitor
+#ctrl + alt - 1  : chunkc tiling::monitor -f 1
+#ctrl + alt - 2  : chunkc tiling::monitor -f 2
+#ctrl + alt - 3  : chunkc tiling::monitor -f 3
+#
+## send window to monitor and follow focus
+#ctrl + cmd - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
+#ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
+#ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
+################### MONITOR END ###################################################
 
 ################## RESIZE START ###################################################
 # increase region size
