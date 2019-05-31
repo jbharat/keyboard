@@ -168,6 +168,12 @@ cmd + ctrl + alt + shift - v : open -a /Applications/Visual\ Studio\ Code.app
 cmd + ctrl + alt + shift - w : open -a /Applications/Twitterrific.app
 cmd + ctrl + alt + shift - x : open -a /Applications/Trello.app
 
+# toggle bluetooth headset
+cmd + ctrl + alt + shift - 0x1B : BluetoothConnector 70-26-05-0f-ff-f3g
+
+# lungo
+cmd + ctrl + alt + shift - 0x18 : open -g 'lungo:toggle'
+
 :: passthrough
 cmd + ctrl + alt + shift - 0x2A ; passthrough
 passthrough < cmd + ctrl + alt + shift - 0x2A ; default
