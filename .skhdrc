@@ -39,16 +39,16 @@ shift + cmd - l : chunkc tiling::window --warp east
 
 ################## RESIZE START ###################################################
 # increase region size
-shift + alt - a : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
-shift + alt - s : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
-shift + alt - w : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
-shift + alt - d : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
+cmd + ctrl - j : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+cmd + ctrl - k : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
+cmd + ctrl - l : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
+cmd + ctrl - i : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
 
 # decrease region size
-shift + cmd - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
-shift + cmd - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
-shift + cmd - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
-shift + cmd - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
+cmd + ctrl - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
+cmd + ctrl - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
+cmd + ctrl - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
+cmd + ctrl - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
 ################## RESIZE END ###################################################
 
 ################## DESKTOP START ###############################################
