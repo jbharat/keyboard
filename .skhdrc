@@ -163,7 +163,7 @@ cmd + ctrl + alt + shift - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
 cmd + ctrl + alt + shift - n : open -a ~/Applications/Chrome\ Apps.localized/Notion.app
 cmd + ctrl + alt + shift - p : open -a ~/Applications/Chrome\ Apps.localized/Google\ Calendar.app
 cmd + ctrl + alt + shift - s : open -a /Applications/Safari.app
-cmd + ctrl + alt + shift - t : open -a /Applications/iTerm.app
+cmd + ctrl + alt + shift - t : open -a /Applications/Alacritty.app
 cmd + ctrl + alt + shift - v : open -a /Applications/Visual\ Studio\ Code.app
 cmd + ctrl + alt + shift - w : open -a /Applications/Twitterrific.app
 cmd + ctrl + alt + shift - x : open -a /Applications/Trello.app
