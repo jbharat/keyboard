@@ -25,30 +25,18 @@ shift + cmd - k : chunkc tiling::window --warp north
 shift + cmd - l : chunkc tiling::window --warp east
 ################## WINDOW END ###################################################
 
-################### MONITOR START ###################################################
-## focus monitor
-#ctrl + alt - 1  : chunkc tiling::monitor -f 1
-#ctrl + alt - 2  : chunkc tiling::monitor -f 2
-#ctrl + alt - 3  : chunkc tiling::monitor -f 3
-#
-## send window to monitor and follow focus
-#ctrl + cmd - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
-#ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
-#ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
-################### MONITOR END ###################################################
-
 ################## RESIZE START ###################################################
 # increase region size
-cmd + ctrl - j : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
-cmd + ctrl - k : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
-cmd + ctrl - l : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
-cmd + ctrl - i : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
+alt + ctrl - a : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+alt + ctrl - s : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
+alt + ctrl - w : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
+alt + ctrl - d : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
 
 # decrease region size
-cmd + ctrl - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
-cmd + ctrl - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
-cmd + ctrl - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
-cmd + ctrl - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
+alt + ctrl + shift - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
+alt + ctrl + shift - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
+alt + ctrl + shift - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
+alt + ctrl + shift - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
 ################## RESIZE END ###################################################
 
 ################## DESKTOP START ###############################################
@@ -75,17 +63,6 @@ alt - 6 : chunkc tiling::desktop --focus 6
 alt - 7 : chunkc tiling::desktop --focus 7
 alt - 8 : chunkc tiling::desktop --focus 8
 alt - 9 : chunkc tiling::desktop --focus 9
-
-# fast focus desktop with hyper key
-cmd + ctrl + alt + shift - 1 : chunkc tiling::desktop --focus 1
-cmd + ctrl + alt + shift - 2 : chunkc tiling::desktop --focus 2
-cmd + ctrl + alt + shift - 3 : chunkc tiling::desktop --focus 3
-cmd + ctrl + alt + shift - 4 : chunkc tiling::desktop --focus 4
-cmd + ctrl + alt + shift - 5 : chunkc tiling::desktop --focus 5
-cmd + ctrl + alt + shift - 6 : chunkc tiling::desktop --focus 6
-cmd + ctrl + alt + shift - 7 : chunkc tiling::desktop --focus 7
-cmd + ctrl + alt + shift - 8 : chunkc tiling::desktop --focus 8
-cmd + ctrl + alt + shift - 9 : chunkc tiling::desktop --focus 9
 
 # send window to desktop and follow focus
 shift + alt - 1 : chunkc tiling::window --send-to-desktop 1; chunkc tiling::desktop --focus 1
@@ -152,28 +129,29 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 # ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 # apps
-cmd + ctrl + alt + shift - a : open -a /Applications/Spotify.app
-cmd + ctrl + alt + shift - b : open -a /Applications/Google\ Chrome.app
-cmd + ctrl + alt + shift - c : open -a /Applications/Slack.app
-cmd + ctrl + alt + shift - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.app
-cmd + ctrl + alt + shift - e : open -a /Applications/Emacs.app
-cmd + ctrl + alt + shift - f : open -a /System/Library/CoreServices/Finder.app
-cmd + ctrl + alt + shift - g : open -a /Applications/Canary\ Mail.app
-cmd + ctrl + alt + shift - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
-cmd + ctrl + alt + shift - n : open -a ~/Applications/Chrome\ Apps.localized/Notion.app
-cmd + ctrl + alt + shift - p : open -a ~/Applications/Chrome\ Apps.localized/Google\ Calendar.app
-cmd + ctrl + alt + shift - s : open -a /Applications/Safari.app
-cmd + ctrl + alt + shift - t : open -a /Applications/Alacritty.app
-cmd + ctrl + alt + shift - v : open -a /Applications/Visual\ Studio\ Code.app
-cmd + ctrl + alt + shift - w : open -a /Applications/Twitterrific.app
-cmd + ctrl + alt + shift - x : open -a /Applications/Trello.app
+cmd + ctrl - a : open -a /Applications/Spotify.app
+cmd + ctrl - b : open -a /Applications/Google\ Chrome.app
+cmd + ctrl - c : open -a /Applications/Slack.app
+cmd + ctrl - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.app
+cmd + ctrl - e : open -a /Applications/Emacs.app
+cmd + ctrl - f : open -a /System/Library/CoreServices/Finder.app
+cmd + ctrl - g : open -a /Applications/Canary\ Mail.app
+cmd + ctrl - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
+cmd + ctrl - n : open -a ~/Applications/Chrome\ Apps.localized/Notion.app
+cmd + ctrl - p : open -a ~/Applications/Chrome\ Apps.localized/Google\ Calendar.app
+cmd + ctrl - s : open -a /Applications/Safari.app
+cmd + ctrl - t : open -a /Applications/Alacritty.app
+cmd + ctrl - v : open -a /Applications/Visual\ Studio\ Code.app
+cmd + ctrl - w : open -a /Applications/Twitterrific.app
+cmd + ctrl - x : open -a /Applications/Trello.app
 
 # toggle bluetooth headset
-cmd + ctrl + alt + shift - 0x1B : BluetoothConnector 70-26-05-0f-ff-f3g
+cmd - 0x1B : BluetoothConnector 70-26-05-0f-ff-f3g
 
 # lungo
-cmd + ctrl + alt + shift - 0x18 : open -g 'lungo:toggle'
+cmd - 0x18 : open -g 'lungo:toggle'
 
+# \ toggles skhd
 :: passthrough
-cmd + ctrl + alt + shift - 0x2A ; passthrough
-passthrough < cmd + ctrl + alt + shift - 0x2A ; default
+cmd + ctrl - 0x2A ; passthrough
+passthrough < cmd + ctrl - 0x2A ; default
