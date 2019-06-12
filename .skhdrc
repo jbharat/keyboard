@@ -146,10 +146,10 @@ cmd + ctrl - w : open -a /Applications/Twitterrific.app
 cmd + ctrl - x : open -a /Applications/Trello.app
 
 # toggle bluetooth headset
-cmd - 0x1B : BluetoothConnector 70-26-05-0f-ff-f3g
+cmd + ctrl - 0x1B : BluetoothConnector 70-26-05-0f-ff-f3g
 
 # lungo
-cmd - 0x18 : open -g 'lungo:toggle'
+cmd + ctrl - 0x18 : open -g 'lungo:toggle'
 
 # \ toggles skhd
 :: passthrough
