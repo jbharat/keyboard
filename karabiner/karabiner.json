@@ -814,24 +814,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
@@ -933,6 +916,9 @@
                 }
             ],
             "name": "bharat",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
@@ -1053,6 +1039,9 @@
                 }
             ],
             "name": "default",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
