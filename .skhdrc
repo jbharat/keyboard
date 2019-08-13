@@ -150,5 +150,5 @@ cmd + ctrl - 0x18 : open -g 'lungo:toggle'
 cmd + ctrl - 0x2A ; passthrough
 passthrough < cmd + ctrl - 0x2A ; default
 
-# reload yabai asterisk
-cmd + ctrl - 0x32 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# reload yabai quote
+cmd + ctrl - 0x27 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
