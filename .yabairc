@@ -42,4 +42,19 @@ yabai -m config window_placement first_child
 
 yabai -m rule --add app="^Finder$" manage=on
 
+# disable the border on the MS teams window
+yabai -m rule --add \
+    app='^Microsoft Teams$' \
+    title='^Microsoft Teams Notification$' \
+    border=off
+
+# The below signal only works on current master, not in 1.1.2
+# Tries to focus the window under the cursor whenever the MS teams notification gains focus
+# Probably conflicts with mouse follows focus in some ways
+yabai -m signal --add \
+    event=window_focused \
+    app='^Microsoft Teams$' \
+    title='^Microsoft Teams Notification$' \
+    action='yabai -m window --focus south > /dev/null 2>&1'
+
 echo "yabai configuration loaded.."
