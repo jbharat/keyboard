@@ -55,6 +55,6 @@ yabai -m signal --add \
     event=window_focused \
     app='^Microsoft Teams$' \
     title='^Microsoft Teams Notification$' \
-    action='yabai -m window --focus south > /dev/null 2>&1'
+    action='yabai -m window --focus mouse > /dev/null 2>&1'
 
 echo "yabai configuration loaded.."
