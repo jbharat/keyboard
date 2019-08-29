@@ -40,7 +40,10 @@ yabai -m config window_gap                   6
 
 yabai -m config window_placement first_child
 
-yabai -m rule --add app="^Finder$" manage=on
+yabai -m rule --add \
+    app="^Finder$" \
+    manage=on \
+    sticky=off
 
 # disable the border on the MS teams window
 yabai -m rule --add \
