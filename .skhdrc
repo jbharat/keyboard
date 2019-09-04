@@ -113,8 +113,8 @@ alt - t : yabai -m window --toggle float;\
 alt - s : yabai -m window --toggle sticky
 
 # # toggle sticky, float and resize to picture-in-picture size
-# alt - p : yabai -m window --toggle sticky;\
-#           yabai -m window --grid 5:5:4:0:1:1
+alt - p : yabai -m window --toggle sticky;\
+          yabai -m window --grid 5:5:4:0:1:1
 
 # change layout of desktop
 cmd + alt - a : yabai -m space --layout bsp
@@ -150,5 +150,10 @@ cmd + ctrl - 0x18 : open -g 'lungo:toggle'
 cmd + ctrl - 0x2A ; passthrough
 passthrough < cmd + ctrl - 0x2A ; default
 
-# reload yabai quote
+# '"' char
+# reload yabai 
 cmd + ctrl - 0x27 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+# '?' char
+# toggle border
+cmd + ctrl - 0x2C : yabai -m window --toggle border
