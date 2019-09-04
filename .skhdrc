@@ -122,7 +122,7 @@ cmd + alt - d : yabai -m space --layout float
 
 # apps
 cmd + ctrl - a : open -a /Applications/Spotify.app
-cmd + ctrl - b : open -a /Applications/Google\ Chrome.app
+cmd + ctrl - b : open -a /Applications/Firefox.app
 cmd + ctrl - c : open -a /Applications/Slack.app
 cmd + ctrl - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.app
 cmd + ctrl - e : open -a /Applications/Emacs.app
