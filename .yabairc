@@ -45,6 +45,11 @@ yabai -m rule --add \
     manage=on \
     sticky=off
 
+yabai -m rule --add \
+    app="^Emacs$" \
+    manage=on \
+    sticky=off
+
 # disable the border on the MS teams window
 yabai -m rule --add \
     app='^Microsoft Teams$' \
