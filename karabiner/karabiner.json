@@ -416,11 +416,11 @@
             ]
           },
           {
-            "description": "Map fn+i/o/p as previous/play_or_pause/next media keys.",
+            "description": "Map fn+q/w/e as previous/play_or_pause/next media keys.",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "i",
+                  "key_code": "q",
                   "modifiers": {
                     "mandatory": [
                       "fn"
@@ -436,7 +436,7 @@
               },
               {
                 "from": {
-                  "key_code": "o",
+                  "key_code": "w",
                   "modifiers": {
                     "mandatory": [
                       "fn"
@@ -452,7 +452,7 @@
               },
               {
                 "from": {
-                  "key_code": "p",
+                  "key_code": "e",
                   "modifiers": {
                     "mandatory": [
                       "fn"
