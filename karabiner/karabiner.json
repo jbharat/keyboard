@@ -874,15 +874,6 @@
             },
             {
               "from": {
-                "key_code": "right_control"
-              },
-              "to": {
-                "key_code": "fn",
-                "lazy": true
-              }
-            },
-            {
-              "from": {
                 "key_code": "left_option"
               },
               "to": {
@@ -891,7 +882,7 @@
             },
             {
               "from": {
-                "key_code": "right_command"
+                "key_code": "right_control"
               },
               "to": {
                 "key_code": "right_option"
@@ -902,7 +893,7 @@
                 "key_code": "right_option"
               },
               "to": {
-                "key_code": "right_command"
+                "key_code": "right_control"
               }
             }
           ]

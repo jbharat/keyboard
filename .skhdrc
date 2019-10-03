@@ -124,12 +124,13 @@ cmd + alt - d : yabai -m space --layout float
 cmd + ctrl - a : open -a /Applications/Spotify.app
 cmd + ctrl - b : open -a /Applications/Firefox.app
 cmd + ctrl - c : open -a /Applications/Slack.app
+cmd + ctrl - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.app
 cmd + ctrl - e : open -a /Applications/Emacs.app
 cmd + ctrl - f : open -a /System/Library/CoreServices/Finder.app
 cmd + ctrl - g : open -a /Applications/Canary\ Mail.app
 cmd + ctrl - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
 cmd + ctrl - n : ~/notion.sh
-cmd + ctrl - p : open -a /Applications/Google\ Chrome.app
+cmd + ctrl - p : open -a ~/Applications/Chrome\ Apps.localized/GCalendar.app
 cmd + ctrl - s : open -a /Applications/Safari.app
 cmd + ctrl - t : open -a /Applications/Alacritty.app
 cmd + ctrl - v : open -a /Applications/Visual\ Studio\ Code.app
