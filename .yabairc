@@ -42,8 +42,13 @@ yabai -m config window_placement first_child
 
 yabai -m rule --add \
     app="^Finder$" \
-    manage=on \
-    sticky=off
+    manage=off \
+    topmost=on
+
+yabai -m rule --add \
+    title="Preferences$" \
+    manage=off \
+    topmost=on
 
 yabai -m rule --add \
     app="^Emacs$" \
