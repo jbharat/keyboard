@@ -262,11 +262,11 @@
             ]
           },
           {
-            "description": "Map fn+a/e as home/end.",
+            "description": "Map fn+[/' as home/end.",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "a",
+                  "key_code": "open_bracket",
                   "modifiers": {
                     "mandatory": [
                       "fn"
@@ -285,7 +285,7 @@
               },
               {
                 "from": {
-                  "key_code": "e",
+                  "key_code": "quote",
                   "modifiers": {
                     "mandatory": [
                       "fn"
