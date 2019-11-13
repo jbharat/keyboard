@@ -157,3 +157,7 @@ cmd + ctrl - 0x27 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # '?' char
 # toggle border
 cmd + ctrl - 0x2C : yabai -m window --toggle border
+
+# fn + n
+# open system calculator
+fn - n : open /System/Applications/Calculator.app
