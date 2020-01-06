@@ -128,7 +128,7 @@ cmd + ctrl + shift - d : open -a ~/Applications/Chrome\ Apps.localized/Todoist.a
 cmd + ctrl + shift - f : open -a /System/Library/CoreServices/Finder.app
 cmd + ctrl + shift - g : open -a /Applications/Canary\ Mail.app
 cmd + ctrl + shift - i : open -a /Applications/IntelliJ\ IDEA\ CE.app
-cmd + ctrl + shift - n : open -a /Applications/Evernote.app
+cmd + ctrl + shift - n : open -a /Applications/Notion.app
 cmd + ctrl + shift - p : open -a /Applications/Todoist.app
 cmd + ctrl + shift - s : open -a /Applications/Safari.app
 cmd + ctrl + shift - t : open -a /Applications/Alacritty.app
