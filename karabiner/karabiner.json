@@ -136,8 +136,7 @@
                     "mandatory": [
                       "fn"
                     ],
-                    "optional": [
-                      "any"
+                    "optional": [ "any"
                     ]
                   }
                 },
