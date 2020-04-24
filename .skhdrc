@@ -23,32 +23,12 @@ shift + cmd - k : yabai -m window --warp north
 shift + cmd - l : yabai -m window --warp east
 ################## WINDOW END ###################################################
 
-################## RESIZE START ###################################################
-# increase region size
-ctrl + alt - a : yabai -m window --resize left:-20:0
-ctrl + alt - s : yabai -m window --resize bottom:0:20
-ctrl + alt - w : yabai -m window --resize top:0:-20
-ctrl + alt - d : yabai -m window --resize right:20:0
-
-# decrease region size
-ctrl + alt + shift - a : yabai -m window --resize left:20:0
-ctrl + alt + shift - s : yabai -m window --resize bottom:0:-20
-ctrl + alt + shift - w : yabai -m window --resize top:0:20
-ctrl + alt + shift - d : yabai -m window --resize right:-20:0
-################## RESIZE END ###################################################
-
 ################## DESKTOP START ###############################################
 # create desktop, move window and follow focus
 cmd + alt - n : yabai -m space --create && \
                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
                   yabai -m window --space "${index}" && \
                   yabai -m space --focus "${index}"
-
-# # create desktop and follow focus
-# cmd + alt - n : chunkc tiling::desktop --create;\
-#                   id=$(chunkc tiling::query --desktops-for-monitor $(chunkc tiling::query --monitor-for-desktop $(chunkc tiling::query --desktop id)));\
-#                   chunkc tiling::window --send-to-desktop $(echo ${id##* });\
-#                   chunkc tiling::desktop --focus $(echo ${id##* })
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
@@ -81,40 +61,17 @@ shift + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
 # equalize size of windows
 shift + alt - 0 : yabai -m space --balance
 
-# rotate tree
-alt - r : yabai -m space --rotate 90
+# # rotate tree
+fn - r : yabai -m space --rotate 90
 
-# mirror tree y-axis is
-alt - y : yabai -m space --mirror y-axis
+# # toggle window fullscreen
+fn - f : yabai -m window --toggle zoom-fullscreen
 
-# mirror tree x-axis is
-alt - x : yabai -m space --mirror x-axis
+# # toggle window parent zoom
+fn  - z : yabai -m window --toggle zoom-parent
 
-# toggle desktop offset
-alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
-
-# toggle window fullscreen
-alt - f : yabai -m window --toggle zoom-fullscreen
-
-# toggle window native fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
-
-# toggle window parent zoom
-alt - d : yabai -m window --toggle zoom-parent
-
-# toggle window split type
-alt - e : yabai -m window --toggle split
-
-# float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
-
-# toggle sticky
-alt - s : yabai -m window --toggle sticky
-
-# # toggle sticky, float and resize to picture-in-picture size
-alt - p : yabai -m window --toggle sticky;\
-          yabai -m window --grid 5:5:4:0:1:1
+# # toggle window native fullscreen
+cmd + ctrl  - f : yabai -m window --toggle native-fullscreen
 
 # change layout of desktop
 cmd + alt - a : yabai -m space --layout bsp
