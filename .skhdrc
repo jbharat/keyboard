@@ -128,7 +128,7 @@ cmd + ctrl - 0x27 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # '?' char
 # toggle border
-cmd + ctrl - 0x2C : yabai -m window --toggle border
+cmd + ctrl - 0x2C : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # fn + n
 # open system calculator
